@@ -1,0 +1,56 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "hv4dwww": {
+      "projectType": "library",
+      "root": "projects/hv4dwww",
+      "sourceRoot": "projects/hv4dwww/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/hv4dwww/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/hv4dwww/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/hv4dwww/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/hv4dwww/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/hv4dwww/**/*.ts",
+              "projects/hv4dwww/**/*.html"
+            ],
+            "eslintConfig": "projects/hv4dwww/eslint.config.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "9540f2cd-cc1f-4fb3-94c0-d34089ed6b14",
+    "schematicCollections": [
+      "angular-eslint"
+    ]
+  }
+}
