@@ -5,9 +5,9 @@ import { ihv4dwebelement, WEB_ELEMENT_TOKEN } from '../../interface/ihv4dwebelem
   selector: 'hv4dbanner',
   templateUrl: './hv4dbanner.html',
   styleUrls: ['./hv4dbanner.css'],
-  providers: [{ provide: WEB_ELEMENT_TOKEN, useExisting: AppItemComponent }]
+  providers: [{ provide: WEB_ELEMENT_TOKEN, useExisting: hv4dbanner }]
 })
-export class AppItemComponent implements ihv4dwebelement {
+export class hv4dbanner implements ihv4dwebelement {
 
 
 }

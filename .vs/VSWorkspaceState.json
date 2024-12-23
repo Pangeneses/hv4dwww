@@ -3,14 +3,8 @@
     "",
     "\\projects",
     "\\projects\\hv4dwww",
-    "\\projects\\hv4dwww\\src",
-    "\\projects\\hv4dwww\\src\\interface",
-    "\\projects\\hv4dwww\\src\\lib",
-    "\\projects\\hv4dwww\\src\\lib\\hv4dhvid",
-    "\\projects\\hv4dwww\\src\\lib\\hv4drwdu",
-    "\\projects\\hv4dwww\\src\\widget",
-    "\\projects\\hv4dwww\\src\\widget\\hv4dbanner"
+    "\\projects\\hv4dwww\\src"
   ],
-  "SelectedNode": "\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.ts",
+  "SelectedNode": "\\projects\\hv4dwww\\src\\widget",
   "PreviewInSolutionExplorer": false
 }
