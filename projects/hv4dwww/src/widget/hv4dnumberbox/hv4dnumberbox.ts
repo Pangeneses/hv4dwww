@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'hv4dpagination',
-  templateUrl: './hv4dpagination.html',
-  styleUrls: ['./hv4dpagination.css'],
+  selector: 'hv4dnumberbox',
+  templateUrl: './hv4dnumberbox.html',
+  styleUrls: ['./hv4dnumberbox.css'],
   standalone: true
 })
-export class hv4dpagination {
+export class hv4dnumberbox {
 
 
 }

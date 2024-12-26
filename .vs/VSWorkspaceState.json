@@ -3,8 +3,10 @@
     "",
     "\\projects",
     "\\projects\\hv4dwww",
-    "\\projects\\hv4dwww\\src"
+    "\\projects\\hv4dwww\\src",
+    "\\projects\\hv4dwww\\src\\lib",
+    "\\projects\\hv4dwww\\src\\widget"
   ],
-  "SelectedNode": "\\projects\\hv4dwww\\src\\widget",
+  "SelectedNode": "\\projects\\hv4dwww\\package.json",
   "PreviewInSolutionExplorer": false
 }

@@ -1,6 +1,6 @@
 {
-  "name": "hv4dwww",
-  "version": "0.0.1",
+  "name": "@pangeneses/hv4dwww",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^19.0.0",
     "@angular/core": "^19.0.0"
