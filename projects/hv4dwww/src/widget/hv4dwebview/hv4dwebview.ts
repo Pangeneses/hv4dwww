@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dwebview',
   templateUrl: './hv4dwebview.html',
   styleUrls: ['./hv4dwebview.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dwebview {
 

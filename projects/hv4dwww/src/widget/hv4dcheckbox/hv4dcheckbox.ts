@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dcheckbox',
   templateUrl: './hv4dcheckbox.html',
   styleUrls: ['./hv4dcheckbox.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dcheckbox {
 

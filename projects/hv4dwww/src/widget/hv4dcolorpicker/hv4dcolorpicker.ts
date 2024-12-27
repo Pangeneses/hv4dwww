@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dcolorpicker',
   templateUrl: './hv4dcolorpicker.html',
   styleUrls: ['./hv4dcolorpicker.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dcolorpicker {
 

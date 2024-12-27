@@ -7,22 +7,9 @@ module.exports = tseslint.config(
   {
     files: ["**/*.ts"],
     rules: {
-      "@angular-eslint/directive-selector": [
-        "error",
-        {
-          type: "attribute",
-          prefix: "lib",
-          style: "camelCase",
-        },
-      ],
-      "@angular-eslint/component-selector": [
-        "error",
-        {
-          type: "element",
-          prefix: "lib",
-          style: "kebab-case",
-        },
-      ],
+      '@angular-eslint/prefer-standalone': 'off',
+      '@angular-eslint/component-class-suffix': 'off',      
+      '@angular-eslint/component-selector': 'off' // Disable standalone component warnings
     },
   },
   {

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dflipview',
   templateUrl: './hv4dflipview.html',
   styleUrls: ['./hv4dflipview.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dflipview {
 

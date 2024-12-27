@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dnumberbox',
   templateUrl: './hv4dnumberbox.html',
   styleUrls: ['./hv4dnumberbox.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dnumberbox {
 

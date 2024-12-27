@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dscrollviewer',
   templateUrl: './hv4dscrollviewer.html',
   styleUrls: ['./hv4dscrollviewer.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dscrollviewer {
 

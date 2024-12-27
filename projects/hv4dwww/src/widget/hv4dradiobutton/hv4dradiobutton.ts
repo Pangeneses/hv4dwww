@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dradiobutton',
   templateUrl: './hv4dradiobutton.html',
   styleUrls: ['./hv4dradiobutton.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dradiobutton {
 

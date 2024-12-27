@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dbutton',
   templateUrl: './hv4dbutton.html',
   styleUrls: ['./hv4dbutton.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dbutton {
 

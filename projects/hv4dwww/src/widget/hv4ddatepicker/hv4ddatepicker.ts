@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4ddatepicker',
   templateUrl: './hv4ddatepicker.html',
   styleUrls: ['./hv4ddatepicker.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4ddatepicker {
 

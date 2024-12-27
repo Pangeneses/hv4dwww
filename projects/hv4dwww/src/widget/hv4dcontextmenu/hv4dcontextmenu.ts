@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dcontextmenu',
   templateUrl: './hv4dcontextmenu.html',
   styleUrls: ['./hv4dcontextmenu.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dcontextmenu {
 

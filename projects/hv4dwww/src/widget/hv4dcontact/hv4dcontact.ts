@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dcontact',
   templateUrl: './hv4dcontact.html',
   styleUrls: ['./hv4dcontact.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dcontact {
 

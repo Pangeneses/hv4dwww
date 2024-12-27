@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dhyperlink',
   templateUrl: './hv4dhyperlink.html',
   styleUrls: ['./hv4dhyperlink.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dhyperlink {
 

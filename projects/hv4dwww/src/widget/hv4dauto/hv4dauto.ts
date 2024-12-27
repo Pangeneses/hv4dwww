@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dauto',
   templateUrl: './hv4dauto.html',
   styleUrls: ['./hv4dauto.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dauto {
 

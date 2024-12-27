@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dshape',
   templateUrl: './hv4dshape.html',
   styleUrls: ['./hv4dshape.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dshape {
 

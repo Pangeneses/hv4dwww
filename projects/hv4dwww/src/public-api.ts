@@ -1,4 +1,10 @@
 
+export * from './lib/hv4dwww/hv4dwww.module';
+
+export * from './lib/hv4dhvid/hv4dhvid';
+export * from './lib/hv4drwdu/hv4drwdu';
+export * from './lib/hv4dpanel/hv4dpanel';
+
 export * from './widget/hv4danimico/hv4danimico';
 export * from './widget/hv4dauto/hv4dauto';
 export * from './widget/hv4dbanner/hv4dbanner';

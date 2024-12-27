@@ -1,5 +1,4 @@
-import
-{
+import {
   Component,
   Input,
   ContentChildren,
@@ -10,44 +9,47 @@ import
   AfterContentInit,
   AfterViewInit
 } from '@angular/core';
-
 import { hv4drwdu } from '../../lib/hv4drwdu/hv4drwdu'
 import { hv4dpanel } from '../../lib/hv4dpanel/hv4dpanel'
 import { ihv4dwebelement, WEB_ELEMENT_TOKEN } from '../../interface/ihv4dwebelement';
 
 @Component({
   selector: 'hv4dgridcolumn',
-  imports: [],
-  templateUrl: './hv4dgridview.html',
-  styleUrls: ['./hv4dgridview.css'],
-  standalone: true
+  templateUrl: './hv4dgridcolumn.html',
+  styleUrls: ['./hv4dgridcolumn.css'],
+  standalone: false
 })
 export class hv4dgridcolumn implements OnInit {
-  @Input('MinWidth') MinWidth: string = '0px';
-  @Input('MaxWidth') MaxWidth: string = '1920px';
-  @Input('Width') Width: string = 'auto';
+  @Input('MinWidth') MinWidth: string = "0px";
+  @Input('MaxWidth') MaxWidth: string = "1920px";
+  @Input('Width') Width: string = "auto";
 
   private MinWidthSz: string;
   private MaxWidthSz: string;
   private WidthSz: string;
   constructor() {
-    this.MinWidthSz = '0px';
-    this.MaxWidthSz = '1920px';
-    this.WidthSz = 'auto';
+    console.log("constructor col");
+
+    this.MinWidthSz = "0px";
+    this.MaxWidthSz = "1920px";
+    this.WidthSz = "auto";
   }
 
   ngOnInit() {
-    this.MinWidth = this.MinWidth;
+    console.log("ngOnInit col");
+
+    this.MinWidthSz = this.MinWidth;
     this.MaxWidthSz = this.MaxWidth;
     this.WidthSz = this.Width;
   }
 
   Override(
-    minwidth: string = '0px',
-    maxwidth: string = '1920px',
-    width: string = 'auto'): void {
+    minwidth: string = "0px",
+    maxwidth: string = "1920px",
+    width: string = "auto"): void {
+    console.log("Override col");
 
-    this.MinWidth = minwidth;
+    this.MinWidthSz = minwidth;
     this.MaxWidthSz = maxwidth;
     this.WidthSz = width;
   }
@@ -56,75 +58,83 @@ export class hv4dgridcolumn implements OnInit {
 }
 @Component({
   selector: 'hv4dgridcolumns',
-  imports: [],
-  templateUrl: './hv4dgridview.html',
-  styleUrls: ['./hv4dgridview.css'],
-  standalone: true
+  templateUrl: './hv4dgridcolumns.html',
+  styleUrls: ['./hv4dgridcolumns.css'],
+  standalone: false
 })
 export class hv4dgridcolumns implements AfterContentInit {
   @ContentChildren(hv4dgridcolumn) items!: QueryList<hv4dgridcolumn>;
 
   ColDefinitions: hv4dgridcolumn[];
   constructor() {
+    console.log("constructor cols");
+
     this.ColDefinitions = [];
 
     this.ColDefinitions.push(new hv4dgridcolumn);
 
-    this.ColDefinitions[0].Override('0px', '1920px', 'auto');
+    this.ColDefinitions[0].Override("0px", "1920px", "auto");
   }
 
   ngAfterContentInit() {
+    console.log("ngAfterContentInit cols");
 
     if (this.items.length > 0) this.ColDefinitions = this.items.toArray();
 
   }
 
   AddColumn(column: hv4dgridcolumn): void {
+    console.log("AddColumn cols");
 
     this.ColDefinitions.push(column);
-    
+
   }
 
   RemoveColumn(index: number) {
+    console.log("RemoveColumn cols");
 
-    if (index < 1) throw SyntaxError;
+    if (index < 1) console.log("index less than 1");
 
-    this.ColDefinitions.splice(index, 1);    
+    this.ColDefinitions.splice(index, 1);
   }
 }
 @Component({
   selector: 'hv4dgridrow',
-  imports: [],
-  templateUrl: './hv4dgridview.html',
-  styleUrls: ['./hv4dgridview.css'],
-  standalone: true
+  templateUrl: './hv4dgridrow.html',
+  styleUrls: ['./hv4dgridrow.css'],
+  standalone: false
 })
 export class hv4dgridrow implements OnInit {
-  @Input('MinHeight') MinHeight: string = '0px';
-  @Input('MaxHeight') MaxHeight: string = '1080px';
-  @Input('Height') Height: string = 'auto';
+  @Input('MinHeight') MinHeight: string = "0px";
+  @Input('MaxHeight') MaxHeight: string = "1080px";
+  @Input('Height') Height: string = "auto";
 
   private MinHeightSz: string;
   private MaxHeightSz: string;
   private HeightSz: string;
   constructor() {
-    this.MinHeightSz = '0px';
-    this.MaxHeightSz = '1080px';
-    this.HeightSz = 'auto';
+    console.log("constructor row");
+
+    this.MinHeightSz = "0px";
+    this.MaxHeightSz = "1080px";
+    this.HeightSz = "auto";
   }
 
   ngOnInit() {
-    this.MinHeight = this.MinHeight;
+    console.log("ngOnInit row");
+
+    this.MinHeightSz = this.MinHeight;
     this.MaxHeightSz = this.MaxHeight;
     this.HeightSz = this.Height;
   }
 
   Override(
-    minwidth: string = '0px',
-    maxwidth: string = '1080px',
-    width: string = 'auto'): void {
+    minwidth: string = "0px",
+    maxwidth: string = "1080px",
+    width: string = "auto"): void {
+    console.log("Override row");
 
-    this.MinHeight = minwidth;
+    this.MinHeightSz = minwidth;
     this.MaxHeightSz = maxwidth;
     this.HeightSz = width;
   }
@@ -133,48 +143,51 @@ export class hv4dgridrow implements OnInit {
 }
 @Component({
   selector: 'hv4dgridrows',
-  imports: [],
-  templateUrl: './hv4dgridview.html',
-  styleUrls: ['./hv4dgridview.css'],
-  standalone: true
+  templateUrl: './hv4dgridrows.html',
+  styleUrls: ['./hv4dgridrows.css'],
+  standalone: false
 })
 export class hv4dgridrows implements AfterContentInit {
   @ContentChildren(hv4dgridrow) items!: QueryList<hv4dgridrow>;
 
   RowDefinitions: hv4dgridrow[];
   constructor() {
+    console.log("constructor rows");
+
     this.RowDefinitions = [];
 
     this.RowDefinitions.push(new hv4dgridrow);
 
-    this.RowDefinitions[0].Override('0px', '1080px', 'auto');
+    this.RowDefinitions[0].Override("0px", "1080px", "auto");
   }
 
   ngAfterContentInit() {
+    console.log("ngAfterContentInit rows");
 
     if (this.items.length > 0) this.RowDefinitions = this.items.toArray();
 
   }
 
   AddRow(row: hv4dgridrow): void {
+    console.log("AddRow rows");
 
     this.RowDefinitions.push(row);
 
   }
 
   RemoveRow(index: number) {
+    console.log("RemoveRow rows");
 
-    if (index < 1) throw SyntaxError;
+    if (index < 1) console.log("index less than 1");
 
     this.RowDefinitions.splice(index, 1);
   }
 }
 @Component({
   selector: 'hv4dgridview',
-  imports: [],
   templateUrl: './hv4dgridview.html',
   styleUrls: ['./hv4dgridview.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ihv4dwebelement {
   @Input('GridColumn') GridColumn?: string;
@@ -190,29 +203,55 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
   private PanelGridColumnSpan: hv4drwdu;
   private PanelGridRowSpan: hv4drwdu;
 
-  Panel: hv4dpanel;
+  public Width: string = "";
+  public Height: string = "";
+  public TopLeftX: string = "";
+  public TopLeftY: string = "";
+
+  public Position: string = 'absolute';
 
   private ColDefinitions = new hv4dgridcolumns;
   private RowDefinitions = new hv4dgridrows;
+
   constructor() {
+    console.log("constructor grid");
+
     this.PanelGridColumn = new hv4drwdu;
-    this.PanelGridColumn.FromString("1");
+    try {
+      this.PanelGridColumn.FromString("1");
+    }
+    catch (SyntaxError) {
+      console.log("GridView Constructor");
+    }
 
     this.PanelGridRow = new hv4drwdu;
-    this.PanelGridRow.FromString("1");
+    try {
+      this.PanelGridRow.FromString("1");
+    }
+    catch (SyntaxError) {
+      console.log("GridView Constructor");
+    }
 
     this.PanelGridColumnSpan = new hv4drwdu;
-    this.PanelGridColumnSpan.FromString("1");
+    try {
+      this.PanelGridColumnSpan.FromString("1");
+    }
+    catch (SyntaxError) {
+      console.log("GridView Constructor");
+    }
 
     this.PanelGridRowSpan = new hv4drwdu;
-    this.PanelGridRowSpan.FromString("1");
-
-    this.Panel = new hv4dpanel;
-    this.Panel.SetPanel("0px", "0px", "0px", "0px");
+    try {
+      this.PanelGridRowSpan.FromString("1");
+    }
+    catch (SyntaxError) {
+      console.log("GridView Constructor");
+    }
   }
 
-  ngOnInit()
-  {
+  ngOnInit() {
+    console.log("onInit");
+
     this.PanelGridColumn = new hv4drwdu;
     this.PanelGridRow = new hv4drwdu;
     this.PanelGridColumnSpan = new hv4drwdu;
@@ -223,7 +262,7 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
         this.PanelGridColumn.FromString(this.GridColumn);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("ngOnInit");
       }
     }
     else this.PanelGridColumn.FromString("1");
@@ -233,7 +272,7 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
         this.PanelGridRow.FromString(this.GridRow);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("ngOnInit");
       }
     }
     else this.PanelGridColumn.FromString("1");
@@ -243,7 +282,7 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
         this.PanelGridColumnSpan.FromString(this.GridColumnSpan);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("ngOnInit");
       }
     }
     else this.PanelGridColumnSpan.FromString("1");
@@ -253,52 +292,62 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
         this.PanelGridRowSpan.FromString(this.GridRowSpan);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("ngOnInit");
       }
     }
     else this.PanelGridRowSpan.FromString("1");
-        
+
     if (typeof this.GridColDefinitions != 'undefined') this.ColDefinitions = this.GridColDefinitions;
     if (typeof this.GridRowDefinitions != 'undefined') this.RowDefinitions = this.GridRowDefinitions;
   }
 
   GridItems: ihv4dwebelement[] = [];
 
-  ngAfterContentInit()
-  {
+  ngAfterContentInit() {
+    console.log("ngAfterContentInit grid")
+
     if (this.items.length > 0) this.GridItems = this.items.toArray();
   }
 
   private ColsX: hv4drwdu[] = [];
   private RowsY: hv4drwdu[] = [];
 
-  ngAfterViewInit()
-  {
+  ngAfterViewInit() {
+    console.log("AfterInit");
+
     try {
       this.AutoDefineColumns();
     }
     catch (SyntaxError) {
-      throw SyntaxError;
+      console.log("AutoDefineColumns");
     }
 
     try {
       this.AutoDefineRows();
     }
     catch (SyntaxError) {
-      throw SyntaxError;
+      console.log("AutoDefineRows");
     }
 
     try {
       this.PlaceChildren();
     }
     catch (SyntaxError) {
-      throw SyntaxError;
+      console.log("PlaceChildren");
     }
   }
-  
-  private AutoDefineColumns(): void {
 
-    this.ColsX.push(this.Panel.UCoordx());
+  private AutoDefineColumns(): void {
+    console.log("AutoCol");
+
+    this.ColsX.push(new hv4drwdu());
+
+    try {
+      this.ColsX[this.ColsX.length - 1].FromString(this.TopLeftX);
+    }
+    catch (SyntaxError) {
+      console.log("AutoDefineColumns: TopLeftX:" + this.TopLeftX);
+    }
 
     var numauto: number = 0;
 
@@ -306,37 +355,44 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
 
     for (let index: number = 0; index < this.GridItems.length; index++) {
 
-      var width = new hv4drwdu();
+      let width = new hv4drwdu();
 
       try {
         width.FromString(this.ColDefinitions.ColDefinitions[index].Width);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("AutoDefineColumns: loop");
       }
 
       if (width.Units().match("auto")) numauto += 1;
 
       else if (width.Units().match("px")) nonautowidth += width.Value();
 
-      else throw SyntaxError;
+      else console.log("AutoDefineColumns: loop");;
     }
 
-    var panelwidth: number = this.Panel.VCoordx().Value() - this.Panel.UCoordx().Value();
+    var pnaelwidth: hv4drwdu = new hv4drwdu;
 
-    var diffpanelwidth: number = panelwidth - nonautowidth;
+    try {
+      pnaelwidth.FromString(this.Width);
+    }
+    catch (SyntaxError) {
+      console.log("AutoDefineColumns: Width");
+    }
+
+    var diffpanelwidth: number = pnaelwidth.Value() - nonautowidth;
 
     var autocellsz: number = diffpanelwidth / numauto;
 
     for (let index: number = 0; index < this.GridItems.length; index++) {
 
-      var width = new hv4drwdu();
+      let width = new hv4drwdu();
 
       try {
         width.FromString(this.ColDefinitions.ColDefinitions[index].Width);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("AutoDefineColumns: ColDefs");
       }
 
       if (width.Units().match("auto")) this.ColDefinitions.ColDefinitions[index].Width = autocellsz.toString();
@@ -345,17 +401,42 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
 
       this.ColsX.push(new hv4drwdu);
 
-      this.ColsX[this.ColsX.length - 1].FromString(gridpoint.toString + "px");
+      try {
+        this.ColsX[this.ColsX.length - 1].FromString(gridpoint.toString + "px");
+      }
+      catch (SyntaxError) {
+        console.log("AutoDefineColumns: push");
+      }
     }
 
     this.ColsX.push(new hv4drwdu);
 
-    this.ColsX[this.ColsX.length - 1].FromString(this.Panel.VCoordx().ToString());
+    try {
+      this.ColsX[this.ColsX.length - 1].FromString(this.Width);
+    }
+    catch (SyntaxError) {
+      console.log("AutoDefineColumns: push");
+    }
+
+    try {
+      this.ColsX[this.ColsX.length - 1].FromString((this.ColsX[this.ColsX.length - 1].Value() - this.ColsX[this.ColsX.length - 2].Value()).toString() + "px");
+    }
+    catch (SyntaxError) {
+      console.log("AutoDefineColumns: push");
+    }
   }
 
   private AutoDefineRows(): void {
+    console.log("AutoRow");
 
-    this.RowsY.push(this.Panel.UCoordy());
+    this.RowsY.push(new hv4drwdu());
+
+    try {
+      this.RowsY[this.RowsY.length - 1].FromString(this.TopLeftY);
+    }
+    catch (SyntaxError) {
+      console.log("AutoDefineRows: TopLeftY");
+    }
 
     var numauto: number = 0;
 
@@ -363,37 +444,44 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
 
     for (let index: number = 0; index < this.GridItems.length; index++) {
 
-      var height = new hv4drwdu();
+      let height = new hv4drwdu();
 
       try {
         height.FromString(this.RowDefinitions.RowDefinitions[index].Height);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("AutoDefineRows: Height");
       }
 
       if (height.Units().match("auto")) numauto += 1;
 
       else if (height.Units().match("px")) nonautoheight += height.Value();
 
-      else throw SyntaxError;
+      else console.log("AutoDefineRows: units");
     }
 
-    var panelheight: number = this.Panel.VCoordy().Value() - this.Panel.UCoordy().Value();
+    var pnaelheight: hv4drwdu = new hv4drwdu;
 
-    var diffpanelheight: number = panelheight - nonautoheight;
+    try {
+      pnaelheight.FromString(this.Height);
+    }
+    catch (SyntaxError) {
+      console.log("AutoDefineRows: Height");
+    }
+
+    var diffpanelheight: number = pnaelheight.Value() - nonautoheight;
 
     var autocellsz: number = diffpanelheight / numauto;
 
     for (let index: number = 0; index < this.GridItems.length; index++) {
 
-      var height = new hv4drwdu();
+      let height = new hv4drwdu();
 
       try {
         height.FromString(this.RowDefinitions.RowDefinitions[index].Height);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("AutoDefineRows: Height")
       }
 
       if (height.Units().match("auto")) this.RowDefinitions.RowDefinitions[index].Height = autocellsz.toString();
@@ -407,10 +495,23 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
 
     this.RowsY.push(new hv4drwdu);
 
-    this.RowsY[this.RowsY.length - 1].FromString(this.Panel.VCoordy().ToString());
+    try {
+      this.RowsY[this.RowsY.length - 1].FromString(this.Height);
+    }
+    catch (SyntaxError) {
+      console.log("AutoDefineRows: push")
+    }
+
+    try {
+      this.RowsY[this.RowsY.length - 1].FromString((this.RowsY[this.RowsY.length - 1].Value() - this.RowsY[this.RowsY.length - 2].Value()).toString() + "px");
+    }
+    catch (SyntaxError) {
+      console.log("AutoDefineRows: update push")
+    }
   }
 
   private PlaceChildren(): void {
+    console.log("PlaceChildren");
 
     for (let index: number = 0; index < this.GridItems.length; index++) {
 
@@ -429,13 +530,20 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
         let vcoordx: hv4drwdu = this.RowsY[gridrow - 1];
         let vcoordy: hv4drwdu = this.RowsY[gridrow - 1 + gridrowspan];
 
-        this.GridItems[index].Panel = new hv4dpanel;
+        let panel: hv4dpanel = new hv4dpanel;
 
-        this.GridItems[index].Panel.SetPanel(
-          ucoordx.ToString(),
-          ucoordy.ToString(),
-          vcoordx.ToString(),
-          vcoordy.ToString())
+        try {
+          panel.SetPanel(
+            ucoordx.ToString(),
+            ucoordy.ToString(),
+            vcoordx.ToString(),
+            vcoordy.ToString());
+        }
+        catch (SyntaxError) {
+          console.log("PlaceChildren: Panel")
+        }
+
+        this.GridItems[index].FromPanel(panel);
       }
       else {
         throw SyntaxError;
@@ -448,22 +556,51 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
     gridrow?: string,
     gridcolspan?: string,
     gridrowspan?: string): void {
+    console.log("SetPlacement");
 
     this.PanelGridColumn = new hv4drwdu;
     this.PanelGridRow = new hv4drwdu;
     this.PanelGridColumnSpan = new hv4drwdu;
     this.PanelGridRowSpan = new hv4drwdu;
 
-    if (typeof gridcol != 'undefined') this.PanelGridColumn.FromString(gridcol);
+    if (typeof gridcol != 'undefined') {
+      try {
+        this.PanelGridColumn.FromString(gridcol);
+      }
+      catch (SyntaxError) {
+        console.log("SetPlacement: gridcol")
+      }
+    }
     else this.PanelGridColumn.FromString("1");
 
-    if (typeof gridrow != 'undefined') this.PanelGridRow.FromString(gridrow);
+    if (typeof gridrow != 'undefined') {
+      try {
+        this.PanelGridRow.FromString(gridrow);
+      }
+      catch (SyntaxError) {
+        console.log("SetPlacement: gridcol")
+      }
+    }
     else this.PanelGridRow.FromString("1");
 
-    if (typeof gridcolspan != 'undefined') this.PanelGridColumnSpan.FromString(gridcolspan);
+    if (typeof gridcolspan != 'undefined') {
+      try {
+        this.PanelGridColumnSpan.FromString(gridcolspan);
+      }
+      catch (SyntaxError) {
+        console.log("SetPlacement: gridcol")
+      }
+    }
     else this.PanelGridColumnSpan.FromString("1");
 
-    if (typeof gridrowspan != 'undefined') this.PanelGridRowSpan.FromString(gridrowspan);
+    if (typeof gridrowspan != 'undefined') {
+      try {
+        this.PanelGridRowSpan.FromString(gridrowspan);
+      }
+      catch (SyntaxError) {
+        console.log("SetPlacement: gridcol")
+      }
+    }
     else this.PanelGridRowSpan.FromString("1");
   }
 
@@ -471,6 +608,21 @@ export class hv4dgridview implements OnInit, AfterContentInit, AfterViewInit, ih
   GetGridRow(): hv4drwdu { return this.PanelGridRow; };
   GetGridColumnSpan(): hv4drwdu { return this.PanelGridColumnSpan; };
   GetGridRowSpan(): hv4drwdu { return this.PanelGridRowSpan; };
+
+  FromPanel(input: hv4dpanel): void {
+    console.log("FromPanel");
+
+    this.TopLeftX = input.UCoordx().ToString();
+    this.TopLeftY = input.UCoordx().ToString();
+
+    let width: number = input.UCoordx().Value() - input.UCoordx().Value();
+    let height: number = input.UCoordy().Value() - input.UCoordy().Value();
+
+    this.Width = width.toString() + "px";
+    this.Height = height.toString() + "px";
+
+    console.log(this.TopLeftX + " " + this.TopLeftY + " " + this.Width + " " + this.Height);
+  }
 }
 
 

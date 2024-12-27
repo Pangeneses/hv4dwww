@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dtoggleswitch',
   templateUrl: './hv4dtoggleswitch.html',
   styleUrls: ['./hv4dtoggleswitch.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dtoggleswitch {
 

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dlistview',
   templateUrl: './hv4dlistview.html',
   styleUrls: ['./hv4dlistview.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dlistview {
 

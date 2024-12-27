@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dsplitbutton',
   templateUrl: './hv4dsplitbutton.html',
   styleUrls: ['./hv4dsplitbutton.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dsplitbutton {
 

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dtabview',
   templateUrl: './hv4dtabview.html',
   styleUrls: ['./hv4dtabview.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dtabview {
 

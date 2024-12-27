@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dmap',
   templateUrl: './hv4dmap.html',
   styleUrls: ['./hv4dmap.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dmap {
 

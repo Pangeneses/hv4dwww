@@ -1,7 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Component } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root',
+@Component({
+  selector: 'hv4drwdu',
+  template: '',
+  styles: '',
+  standalone: false
 })
 export class hv4drwdu {
 
@@ -21,14 +24,22 @@ export class hv4drwdu {
 
   FromString(input: string): void {
 
-    if (input == "") throw SyntaxError;
+    console.log("FromString: " + input);
 
-    if (input.indexOf("px") != -1 && input.length < 5) {
+    if (input == "") console.log("hv4drwdu FromString: isNull.");
+
+    if (input.indexOf("px") != -1 && input.length < 7) {
+      console.log("px");
+
       this.RwduUnits = "px";
 
-      let pos: number = input.indexOf("px");
+      const pos: number = input.indexOf("px");
 
-      let temp: string = input.substring(0, pos);
+      console.log(pos.toString());
+
+      const temp: string = input.substring(0, pos);
+
+      console.log(temp);
 
       if (!isNaN(Number(temp))) {
         this.RwduValue = Number(temp);
@@ -40,10 +51,12 @@ export class hv4drwdu {
 
         this.RwduValid = false;
 
-        throw SyntaxError;
+        console.log("hv4drwdu FromString: isMalformed px.");
       }
     }
     else if (input.match("auto")) {
+      console.log("auto");
+
       this.RwduUnits = "auto";
 
       this.RwduValue = -1;
@@ -51,11 +64,13 @@ export class hv4drwdu {
       this.RwduValid = true;
     }
     else if (input.indexOf("%") != -1 && input.length < 5) {
+      console.log("%");
+
       this.RwduUnits = "%";
 
-      let pos: number = input.indexOf("%");
+      const pos: number = input.indexOf("%");
 
-      let temp: string = input.substring(0, pos);
+      const temp: string = input.substring(0, pos);
 
       if (!isNaN(Number(temp))) {
         this.RwduValue = Number(temp);
@@ -67,10 +82,12 @@ export class hv4drwdu {
 
         this.RwduValid = false;
 
-        throw SyntaxError;
+        console.log("hv4drwdu FromString: isMalformed %.");
       }
     }
     else {
+      console.log("else");
+
       this.RwduUnits = "";
 
       if (!isNaN(Number(input))) {
@@ -83,7 +100,7 @@ export class hv4drwdu {
 
         this.RwduValid = false;
 
-        throw SyntaxError;
+        console.log("hv4drwdu FromString: isMalformed numeric.");
       }
     }
   }

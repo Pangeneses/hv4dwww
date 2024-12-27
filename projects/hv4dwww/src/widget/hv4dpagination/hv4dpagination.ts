@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dpagination',
   templateUrl: './hv4dpagination.html',
   styleUrls: ['./hv4dpagination.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dpagination {
 

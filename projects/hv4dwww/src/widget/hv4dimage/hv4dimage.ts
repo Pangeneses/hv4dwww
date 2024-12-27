@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dimage',
   templateUrl: './hv4dimage.html',
   styleUrls: ['./hv4dimage.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dimage {
 

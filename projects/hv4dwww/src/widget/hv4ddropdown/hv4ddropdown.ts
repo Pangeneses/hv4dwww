@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4ddropdown',
   templateUrl: './hv4ddropdown.html',
   styleUrls: ['./hv4ddropdown.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4ddropdown {
 

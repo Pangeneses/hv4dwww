@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dtimepicker',
   templateUrl: './hv4dtimepicker.html',
   styleUrls: ['./hv4dtimepicker.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dtimepicker {
 

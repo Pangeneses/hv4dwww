@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dflyout',
   templateUrl: './hv4dflyout.html',
   styleUrls: ['./hv4dflyout.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dflyout {
 

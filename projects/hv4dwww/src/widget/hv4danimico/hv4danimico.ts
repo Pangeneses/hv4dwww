@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4danimico',
   templateUrl: './hv4danimico.html',
   styleUrls: ['./hv4danimico.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4danimico {
 

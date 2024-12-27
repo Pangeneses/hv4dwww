@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dforms',
   templateUrl: './hv4dforms.html',
   styleUrls: ['./hv4dforms.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dforms {
 

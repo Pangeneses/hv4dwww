@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dinfobar',
   templateUrl: './hv4dinfobar.html',
   styleUrls: ['./hv4dinfobar.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dinfobar {
 

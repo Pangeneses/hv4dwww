@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dsplitview',
   templateUrl: './hv4dsplitview.html',
   styleUrls: ['./hv4dsplitview.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dsplitview {
 

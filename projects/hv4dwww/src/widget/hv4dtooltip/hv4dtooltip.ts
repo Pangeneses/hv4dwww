@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dtooltip',
   templateUrl: './hv4dtooltip.html',
   styleUrls: ['./hv4dtooltip.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dtooltip {
 

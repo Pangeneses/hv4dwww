@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dexpander',
   templateUrl: './hv4dexpander.html',
   styleUrls: ['./hv4dexpander.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dexpander {
 

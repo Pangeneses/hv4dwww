@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dnavview',
   templateUrl: './hv4dnavview.html',
   styleUrls: ['./hv4dnavview.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dnavview {
 

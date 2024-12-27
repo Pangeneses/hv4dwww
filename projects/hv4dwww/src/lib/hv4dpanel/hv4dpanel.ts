@@ -1,8 +1,11 @@
 import { hv4drwdu } from '../../lib/hv4drwdu/hv4drwdu'
-import { Injectable } from '@angular/core';
+import { Component } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root',
+@Component({
+  selector: 'hv4dpanel',
+  template: '',
+  styles: '',
+  standalone: false
 })
 export class hv4dpanel {
 
@@ -30,84 +33,94 @@ export class hv4dpanel {
     vcoordy?: string): void {
 
     if (typeof ucoordx != 'undefined') {
+
       this.PanelUCoordx = new hv4drwdu();
 
       try {
         this.PanelUCoordx.FromString(ucoordx);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("ucoordx:" + ucoordx)
       }
 
       if (!this.PanelUCoordx.Units().match("px") || !this.PanelUCoordx.Valid() || this.PanelUCoordx.Value() < 0) {
-        throw SyntaxError;
+        console.log(this.PanelUCoordx.Units() + " " + this.PanelUCoordx.Value());
       }
     }
 
-    if (typeof ucoordx != 'undefined') {
+    if (typeof ucoordy != 'undefined') {
+
+      this.PanelUCoordy = new hv4drwdu();
+
       try {
-        this.PanelUCoordy = new hv4drwdu();
+        this.PanelUCoordy.FromString(ucoordy);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("ucoordy:" + ucoordy)
       }
 
       if (!this.PanelUCoordy.Units().match("px") || !this.PanelUCoordy.Valid() || this.PanelUCoordy.Value() < 0) {
-        throw SyntaxError;
+        console.log(this.PanelUCoordy.Units() + " " + this.PanelUCoordy.Value());
       }
     }
 
-    if (typeof ucoordx != 'undefined') {
+    if (typeof vcoordx != 'undefined') {
+
+      this.PanelVCoordx = new hv4drwdu();
+
       try {
-        this.PanelVCoordx = new hv4drwdu();
+        this.PanelVCoordx.FromString(vcoordx);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("vcoordx: " + vcoordx)
       }
 
       if (!this.PanelVCoordx.Units().match("px") || !this.PanelVCoordx.Valid() || this.PanelVCoordx.Value() < 0) {
-        throw SyntaxError;
+        console.log(this.PanelVCoordx.Units() + " " + this.PanelVCoordx.Value());
       }
     }
 
-    if (typeof ucoordx != 'undefined') {
+    if (typeof vcoordy != 'undefined') {
+
+      this.PanelVCoordy = new hv4drwdu();
+
       try {
-        this.PanelVCoordy = new hv4drwdu();
+        this.PanelVCoordy.FromString(vcoordy);
       }
       catch (SyntaxError) {
-        throw SyntaxError;
+        console.log("vcoordy: " + vcoordy)
       }
 
       if (!this.PanelVCoordy.Units().match("px") || !this.PanelVCoordy.Valid() || this.PanelVCoordy.Value() < 0) {
-        throw SyntaxError;
+        console.log(this.PanelVCoordy.Units() + " " + this.PanelVCoordy.Value());
       }
     }
 
-    if (this.PanelVCoordx.Value() > this.PanelUCoordx.Value()) throw SyntaxError;
+    if (this.PanelUCoordx.Value() > this.PanelVCoordx.Value()) console.log("Greater");
 
-    if (this.PanelVCoordy.Value() > this.PanelUCoordy.Value()) throw SyntaxError;
+    if (this.PanelUCoordy.Value() > this.PanelVCoordy.Value()) console.log("Greater");
   }
 
   Reset(replace: hv4dpanel): void {
 
     if (!replace.PanelUCoordx.Units().match("px") || !replace.PanelUCoordx.Valid() || replace.PanelUCoordx.Value() < 0) {
-      throw SyntaxError;
+      throw console.log("hv4dpanel Reset: isMalformed px.");
     }
 
     if (!replace.PanelUCoordy.Units().match("px") || !replace.PanelUCoordy.Valid() || replace.PanelUCoordy.Value() < 0) {
-      throw SyntaxError;
+      throw console.log("hv4dpanel Reset: isMalformed px.");
     }
 
     if (!replace.PanelVCoordx.Units().match("px") || !replace.PanelVCoordx.Valid() || replace.PanelVCoordx.Value() < 0) {
-      throw SyntaxError;
+      throw console.log("hv4dpanel Reset: isMalformed px.");
     }
 
     if (!replace.PanelVCoordy.Units().match("px") || !replace.PanelVCoordy.Valid() || replace.PanelVCoordy.Value() < 0) {
-      throw SyntaxError;
+      throw console.log("hv4dpanel Reset: isMalformed px.");
     }
 
-    if (replace.PanelVCoordx.Value() > replace.PanelUCoordx.Value()) throw SyntaxError;
+    if (replace.PanelVCoordx.Value() > replace.PanelUCoordx.Value()) throw console.log("hv4dpanel Reset: isMalformed panel.");
 
-    if (replace.PanelVCoordy.Value() > replace.PanelUCoordy.Value()) throw SyntaxError;
+    if (replace.PanelVCoordy.Value() > replace.PanelUCoordy.Value()) throw console.log("hv4dpanel Reset: isMalformed panel.");
   }
 }

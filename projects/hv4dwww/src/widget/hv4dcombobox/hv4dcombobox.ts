@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dcombobox',
   templateUrl: './hv4dcombobox.html',
   styleUrls: ['./hv4dcombobox.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dcombobox {
 

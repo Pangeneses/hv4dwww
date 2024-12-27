@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dtreeview',
   templateUrl: './hv4dtreeview.html',
   styleUrls: ['./hv4dtreeview.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dtreeview {
 

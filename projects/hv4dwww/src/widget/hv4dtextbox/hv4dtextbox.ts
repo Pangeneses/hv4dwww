@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dtextbox',
   templateUrl: './hv4dtextbox.html',
   styleUrls: ['./hv4dtextbox.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dtextbox {
 

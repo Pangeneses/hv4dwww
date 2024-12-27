@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dcalendar',
   templateUrl: './hv4dcalendar.html',
   styleUrls: ['./hv4dcalendar.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dcalendar {
 

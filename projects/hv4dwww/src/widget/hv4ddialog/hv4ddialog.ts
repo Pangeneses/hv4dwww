@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4ddialog',
   templateUrl: './hv4ddialog.html',
   styleUrls: ['./hv4ddialog.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4ddialog {
 

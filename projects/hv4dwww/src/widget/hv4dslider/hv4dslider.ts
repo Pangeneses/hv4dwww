@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dslider',
   templateUrl: './hv4dslider.html',
   styleUrls: ['./hv4dslider.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dslider {
 

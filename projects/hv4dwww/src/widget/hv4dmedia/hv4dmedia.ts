@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'hv4dmedia',
   templateUrl: './hv4dmedia.html',
   styleUrls: ['./hv4dmedia.css'],
-  standalone: true
+  standalone: false
 })
 export class hv4dmedia {
 
