@@ -11,178 +11,84 @@ import { hv4dpanel } from '../../lib/hv4dpanel/hv4dpanel';
   standalone: false
 })
 export class hv4dbanner implements ihv4dwebelement, OnInit {
-  @Input() GridColumn?: string;
-  @Input() GridRow?: string;
-  @Input() GridColumnSpan?: string;
-  @Input() GridRowSpan?: string;
+  @Input('GridColumn') GridColumn?: string;
+  @Input('GridRow') GridRow?: string;
+  @Input('GridColumnSpan') GridColumnSpan?: string;
+  @Input('GridRowSpan') GridRowSpan?: string;
   @Input() URL!: string;
 
-  private PanelGridColumn: hv4drwdu;
-  private PanelGridRow: hv4drwdu;
-  private PanelGridColumnSpan: hv4drwdu;
-  private PanelGridRowSpan: hv4drwdu;
+  public Position = 'absolute';
 
-  public Width = "";
-  public Height = "";
-  public TopLeftX = "";
-  public TopLeftY = "";
+  public Width = '0px';
+  public Height = '0px';
+  public TopLeftX = '0px';
+  public TopLeftY = '0px';
 
-  public Position = "absolute";
+  constructor() { }
 
-  PanelURL: string;
+  DefaultContainer() {
 
-  constructor() {
-    console.log("constructor banner");
+    this.Position = 'absolute';
 
-    this.PanelGridColumn = new hv4drwdu;
-    try {
-      this.PanelGridColumn.FromString("1");
-    }
-    catch (SyntaxError) {
-      console.log("Banner Constructor");
-    }
+    this.Width = "0px";
+    this.Height = "0px";
+    this.TopLeftX = "0px";
+    this.TopLeftY = "0px";
 
-    this.PanelGridRow = new hv4drwdu;
-    try {
-      this.PanelGridRow.FromString("1");
-    }
-    catch (SyntaxError) {
-      console.log("Banner Constructor");
-    }
+    if (typeof this.GridColumn == 'undefined') this.GridColumn = this.GridColumn ?? "1";
+    if (typeof this.GridRow == 'undefined') this.GridRow = this.GridRow ?? "1";
+    if (typeof this.GridColumnSpan == 'undefined') this.GridColumnSpan = this.GridColumnSpan ?? "1";
+    if (typeof this.GridRowSpan == 'undefined') this.GridRowSpan = this.GridRowSpan ?? "1";
 
-    this.PanelGridColumnSpan = new hv4drwdu;
-    try {
-      this.PanelGridColumnSpan.FromString("1");
-    }
-    catch (SyntaxError) {
-      console.log("Banner Constructor");
-    }
-
-    this.PanelGridRowSpan = new hv4drwdu;
-    try {
-      this.PanelGridRowSpan.FromString("1");
-    }
-    catch (SyntaxError) {
-      console.log("Banner Constructor");
-    }
-
-    this.PanelURL = "";
+    this.URL = "";
   }
 
   ngOnInit() {
-    console.log("onInit");
 
-    this.PanelGridColumn = new hv4drwdu;
-    this.PanelGridRow = new hv4drwdu;
-    this.PanelGridColumnSpan = new hv4drwdu;
-    this.PanelGridRowSpan = new hv4drwdu;
+    console.log("Banner: onInit");
 
-    if (typeof this.GridColumn != 'undefined') {
-      try {
-        this.PanelGridColumn.FromString(this.GridColumn);
-      }
-      catch (SyntaxError) {
-        console.log("NgOnInit: Grid Column");
-      }
-    }
-    if (typeof this.GridRow != 'undefined') {
-      try {
-        this.PanelGridRow.FromString(this.GridRow);
-      }
-      catch (SyntaxError) {
-        console.log("NgOnInit: Grid Row");
-      }
-    }
-    if (typeof this.GridColumnSpan != 'undefined') {
-      try {
-        this.PanelGridColumnSpan.FromString(this.GridColumnSpan);
-      }
-      catch (SyntaxError) {
-        console.log("NgOnInit: Grid ColumnSpan");
-      }
-    }
-    if (typeof this.GridRowSpan != 'undefined') {
-      try {
-        this.PanelGridRowSpan.FromString(this.GridRowSpan);
-      }
-      catch (SyntaxError) {
-        console.log("NgOnInit: Grid RowSpan");
-      }      
-    }
+    if (typeof this.GridColumn == 'undefined') this.GridColumn = this.GridColumn ?? "1";
+    if (typeof this.GridRow == 'undefined') this.GridRow = this.GridRow ?? "1";
+    if (typeof this.GridColumnSpan == 'undefined') this.GridColumnSpan = this.GridColumnSpan ?? "1";
+    if (typeof this.GridRowSpan == 'undefined') this.GridRowSpan = this.GridRowSpan ?? "1";
 
-    if (typeof this.URL != 'undefined') this.PanelURL = this.URL;
+    decodeURIComponent(this.URL);
+
+    if (typeof this.URL !== 'undefined') this.URL = this.URL ?? "";
   }
 
   SetPlacement(
-    gridcol?: string,
-    gridrow?: string,
-    gridcolspan?: string,
-    gridrowspan?: string): void {
-    console.log("SetPlacement");
+    gridcol?: number,
+    gridrow?: number,
+    gridcolspan?: number,
+    gridrowspan?: number): void {
 
-    this.PanelGridColumn = new hv4drwdu;
-    this.PanelGridRow = new hv4drwdu;
-    this.PanelGridColumnSpan = new hv4drwdu;
-    this.PanelGridRowSpan = new hv4drwdu;
+    console.log("Banner: SetPlacement");
 
-    if (typeof gridcol != 'undefined') {
-      try {
-        this.PanelGridColumn.FromString(gridcol);
-      }
-      catch (SyntaxError) {
-        console.log("Banner SetPlacement: gridcol")
-      }
-    }
-    else this.PanelGridColumn.FromString("1");
+    var column = gridcol ?? Number(this.GridColumn);
+    var row = gridrow ?? Number(this.GridRow);
+    var columnspan = gridcolspan ?? Number(this.GridColumnSpan);
+    var rowspan = gridrowspan ?? Number(this.GridRowSpan);
 
-    if (typeof gridrow != 'undefined') {
-      try {
-        this.PanelGridRow.FromString(gridrow);
-      }
-      catch (SyntaxError) {
-        console.log("Banner SetPlacement: gridcol")
-      }
-    }
-    else this.PanelGridRow.FromString("1");
-
-    if (typeof gridcolspan != 'undefined') {
-      try {
-        this.PanelGridColumnSpan.FromString(gridcolspan);
-      }
-      catch (SyntaxError) {
-        console.log("Banner SetPlacement: gridcol")
-      }
-    }
-    else this.PanelGridColumnSpan.FromString("1");
-
-    if (typeof gridrowspan != 'undefined') {
-      try {
-        this.PanelGridRowSpan.FromString(gridrowspan);
-      }
-      catch (SyntaxError) {
-        console.log("Banner SetPlacement: gridcol")
-      }
-    }
-    else this.PanelGridRowSpan.FromString("1");
+    this.GridColumn = column.toString();
+    this.GridRow = row.toString();
+    this.GridColumnSpan = columnspan.toString();
+    this.GridRowSpan = rowspan.toString();
   }
 
-  GetGridColumn(): hv4drwdu { return this.PanelGridColumn; };
-  GetGridRow(): hv4drwdu { return this.PanelGridRow; };
-  GetGridColumnSpan(): hv4drwdu { return this.PanelGridColumnSpan; };
-  GetGridRowSpan(): hv4drwdu { return this.PanelGridRowSpan; };
-
   FromPanel(input: hv4dpanel): void {
-    console.log("FromPanel");
+
+    console.log("Banner: FromPanel");
 
     this.TopLeftX = input.UCoordx().ToString();
-    this.TopLeftY = input.UCoordx().ToString();
+    this.TopLeftY = input.UCoordy().ToString();
 
-    const width: number = input.UCoordx().Value() - input.UCoordx().Value();
-    const height: number = input.UCoordy().Value() - input.UCoordy().Value();
+    let width: number = input.VCoordx().Value() - input.UCoordx().Value();
+    let height: number = input.VCoordy().Value() - input.UCoordy().Value();
 
     this.Width = width.toString() + "px";
     this.Height = height.toString() + "px";
 
-    console.log(this.TopLeftX + " " + this.TopLeftY + " " + this.Width + " " + this.Height);
+    console.log("Top Left X: " + this.TopLeftX + " Top Left Y: " + this.TopLeftY + " Width: " + this.Width + " Height: " + this.Height);
   }
 }

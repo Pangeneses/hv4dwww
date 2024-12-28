@@ -22,24 +22,19 @@ export class hv4drwdu {
   Units(): string { return this.RwduUnits; }
   Valid(): boolean { return this.RwduValid; }
 
-  FromString(input: string): void {
+  FromString(input: string = "null"): void {
 
     console.log("FromString: " + input);
 
-    if (input == "") console.log("hv4drwdu FromString: isNull.");
+    if (input == "") throw new SyntaxError("hv4drwdu FromString: isNull.");
 
-    if (input.indexOf("px") != -1 && input.length < 7) {
-      console.log("px");
+    if (input.indexOf("px") !== -1 && input.length < 7) {
 
       this.RwduUnits = "px";
 
       const pos: number = input.indexOf("px");
 
-      console.log(pos.toString());
-
       const temp: string = input.substring(0, pos);
-
-      console.log(temp);
 
       if (!isNaN(Number(temp))) {
         this.RwduValue = Number(temp);
@@ -51,11 +46,10 @@ export class hv4drwdu {
 
         this.RwduValid = false;
 
-        console.log("hv4drwdu FromString: isMalformed px.");
+        throw new SyntaxError("hv4drwdu FromString: isMalformed px.");
       }
     }
     else if (input.match("auto")) {
-      console.log("auto");
 
       this.RwduUnits = "auto";
 
@@ -63,8 +57,7 @@ export class hv4drwdu {
 
       this.RwduValid = true;
     }
-    else if (input.indexOf("%") != -1 && input.length < 5) {
-      console.log("%");
+    else if (input.indexOf("%") !== -1 && input.length < 5) {
 
       this.RwduUnits = "%";
 
@@ -82,32 +75,39 @@ export class hv4drwdu {
 
         this.RwduValid = false;
 
-        console.log("hv4drwdu FromString: isMalformed %.");
+        throw new SyntaxError("hv4drwdu FromString: isMalformed %.");
       }
     }
     else {
-      console.log("else");
 
       this.RwduUnits = "";
 
       if (!isNaN(Number(input))) {
+        console.log(input);
+
         this.RwduValue = Number(input);
 
         this.RwduValid = true;
       }
       else {
+        console.log("isMalformed");
+
         this.RwduValue = 0;
 
         this.RwduValid = false;
 
-        console.log("hv4drwdu FromString: isMalformed numeric.");
+        throw new SyntaxError("hv4drwdu FromString: isMalformed numeric.");
       }
     }
   }
 
   ToString(): string {
 
-    return this.Value.toString() + this.Units
-
+    if (this.RwduValid == true) {
+      return this.RwduValue.toString() + this.RwduUnits;
+    }
+    else {
+      throw new SyntaxError("");
+    }
   }
 }
