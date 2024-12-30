@@ -4,13 +4,13 @@ import { hv4dpixels } from '../../lib/hv4dpixels/hv4dpixels';
 import { hv4dpanel } from '../../lib/hv4dpanel/hv4dpanel';
 
 @Component({
-  selector: 'hv4dbanner',
-  templateUrl: './hv4dbanner.html',
-  styleUrls: ['./hv4dbanner.css'],
-  providers: [{ provide: WEB_ELEMENT_TOKEN, useExisting: hv4dbanner }],
+  selector: 'hv4dborder',
+  templateUrl: './hv4dborder.html',
+  styleUrls: ['./hv4dborder.css'],
+  providers: [{ provide: WEB_ELEMENT_TOKEN, useExisting: hv4dborder }],
   standalone: false
 })
-export class hv4dbanner implements ihv4dwebelement, OnInit {
+export class hv4dborder implements ihv4dwebelement, OnInit {
   @Input('GridColumn') GridColumn?: string;
   @Input('GridRow') GridRow?: string;
   @Input('GridColumnSpan') GridColumnSpan?: string;
@@ -45,7 +45,7 @@ export class hv4dbanner implements ihv4dwebelement, OnInit {
 
   ngOnInit() {
 
-    console.log("Banner: onInit");
+    console.log("Border: onInit");
 
     if (typeof this.GridColumn == 'undefined') this.GridColumn = this.GridColumn ?? "1";
     if (typeof this.GridRow == 'undefined') this.GridRow = this.GridRow ?? "1";
@@ -63,7 +63,7 @@ export class hv4dbanner implements ihv4dwebelement, OnInit {
     gridcolspan?: number,
     gridrowspan?: number): void {
 
-    console.log("Banner: SetPlacement");
+    console.log("Border: SetPlacement");
 
     var column = gridcol ?? Number(this.GridColumn);
     var row = gridrow ?? Number(this.GridRow);
@@ -78,7 +78,7 @@ export class hv4dbanner implements ihv4dwebelement, OnInit {
 
   FromPanel(input: hv4dpanel): void {
 
-    console.log("Banner: FromPanel");
+    console.log("Border: FromPanel");
 
     input.UCoordx().FromString((input.UCoordx().Value() / window.devicePixelRatio).toString() + "px");
     input.UCoordy().FromString((input.UCoordy().Value() / window.devicePixelRatio).toString() + "px");

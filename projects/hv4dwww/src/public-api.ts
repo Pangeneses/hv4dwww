@@ -2,13 +2,15 @@
 export * from './lib/hv4dwww/hv4dwww.module';
 
 export * from './lib/hv4dhvid/hv4dhvid';
-export * from './lib/hv4drwdu/hv4drwdu';
+export * from './lib/hv4dpixels/hv4dpixels';
+export * from './lib/hv4dcolorcard/hv4dcolorcard';
 export * from './lib/hv4dpanel/hv4dpanel';
 
 export * from './widget/hv4danimico/hv4danimico';
 export * from './widget/hv4dauto/hv4dauto';
 export * from './widget/hv4dbanner/hv4dbanner';
 export * from './widget/hv4dbar/hv4dbar';
+export * from './widget/hv4dborder/hv4dborder';
 export * from './widget/hv4dbutton/hv4dbutton';
 export * from './widget/hv4dcalendar/hv4dcalendar';
 export * from './widget/hv4dcheckbox/hv4dcheckbox';

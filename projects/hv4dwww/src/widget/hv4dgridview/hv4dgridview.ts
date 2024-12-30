@@ -3,6 +3,7 @@ import {
   Input,
   ContentChild,
   ContentChildren,
+  ViewChildren,
   QueryList,
   Inject,
   forwardRef,
@@ -10,7 +11,7 @@ import {
   AfterContentInit,
   AfterViewInit
 } from '@angular/core';
-import { hv4drwdu } from '../../lib/hv4drwdu/hv4drwdu'
+import { hv4dpixels } from '../../lib/hv4dpixels/hv4dpixels'
 import { hv4dpanel } from '../../lib/hv4dpanel/hv4dpanel'
 import { ihv4dwebelement, WEB_ELEMENT_TOKEN } from '../../interface/ihv4dwebelement';
 
@@ -31,7 +32,7 @@ export class hv4dgridcolumn implements OnInit {
 
     console.log("GridCol: ngOnInit");
 
-    var rwdu = new hv4drwdu;
+    var rwdu = new hv4dpixels;
 
     try {
       rwdu.FromString(this.MinWidth);
@@ -90,7 +91,7 @@ export class hv4dgridcolumn implements OnInit {
     this.MaxWidth = maxwidth;
     this.Width = width;
 
-    var rwdu = new hv4drwdu;
+    var rwdu = new hv4dpixels;
 
     try {
       rwdu.FromString(this.MinWidth);
@@ -219,7 +220,7 @@ export class hv4dgridrow implements OnInit {
 
     console.log("GridRow: ngOnInit.");
 
-    var rwdu = new hv4drwdu;
+    var rwdu = new hv4dpixels;
 
     try {
       rwdu.FromString(this.MinHeight);
@@ -278,7 +279,7 @@ export class hv4dgridrow implements OnInit {
     this.MaxHeight = maxheight;
     this.Height = height;
 
-    var rwdu = new hv4drwdu;
+    var rwdu = new hv4dpixels;
 
     try {
       rwdu.FromString(this.MinHeight);
@@ -508,7 +509,7 @@ export class hv4dgridview implements ihv4dwebelement, OnInit, AfterContentInit {
 
     console.log("GridView: AutoCol");
 
-    var test = new hv4drwdu;
+    var test = new hv4dpixels;
 
     try {
       test.FromString(this.TopLeftX);
@@ -599,7 +600,7 @@ export class hv4dgridview implements ihv4dwebelement, OnInit, AfterContentInit {
 
     console.log("GridView: AutoRow");
 
-    var test = new hv4drwdu;
+    var test = new hv4dpixels;
 
     try {
       test.FromString(this.TopLeftY);
@@ -699,10 +700,10 @@ export class hv4dgridview implements ihv4dwebelement, OnInit, AfterContentInit {
 
     for (let index: number = 0; index < this.GridItems.length; index++) {
 
-      var gridcol = new hv4drwdu;
-      var gridrow = new hv4drwdu;
-      var gridcolspan = new hv4drwdu;
-      var gridrowspan = new hv4drwdu;
+      var gridcol = new hv4dpixels;
+      var gridrow = new hv4dpixels;
+      var gridcolspan = new hv4dpixels;
+      var gridrowspan = new hv4dpixels;
 
       var temp = "null";
 

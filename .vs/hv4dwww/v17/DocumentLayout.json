@@ -3,28 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Developer\\Source\\hv4dwww\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4dcolorcard\\hv4dcolorcard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\lib\\hv4dcolorcard\\hv4dcolorcard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4dpanel\\hv4dpanel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\lib\\hv4dpanel\\hv4dpanel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4dpixels\\hv4dpixels.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\lib\\hv4dpixels\\hv4dpixels.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4drwdu\\hv4drwdu.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\lib\\hv4drwdu\\hv4drwdu.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4dpanel\\hv4dpanel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\lib\\hv4dpanel\\hv4dpanel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\interface\\ihv4dwebelement.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -38,93 +58,175 @@
       "DocumentGroups": [
         {
           "DockedWidth": 245,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "hv4drwdu.ts",
-              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4drwdu\\hv4drwdu.ts",
-              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\lib\\hv4drwdu\\hv4drwdu.ts",
-              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4drwdu\\hv4drwdu.ts",
-              "RelativeToolTip": "projects\\hv4dwww\\src\\lib\\hv4drwdu\\hv4drwdu.ts",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "hv4dpixels.ts",
+              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4dpixels\\hv4dpixels.ts",
+              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\lib\\hv4dpixels\\hv4dpixels.ts",
+              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4dpixels\\hv4dpixels.ts",
+              "RelativeToolTip": "projects\\hv4dwww\\src\\lib\\hv4dpixels\\hv4dpixels.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-27T16:17:46.905Z"
+              "WhenOpened": "2024-12-27T16:17:46.905Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "hv4dpanel.ts",
               "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4dpanel\\hv4dpanel.ts",
               "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\lib\\hv4dpanel\\hv4dpanel.ts",
               "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4dpanel\\hv4dpanel.ts",
               "RelativeToolTip": "projects\\hv4dwww\\src\\lib\\hv4dpanel\\hv4dpanel.ts",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwAgAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-24T10:48:58.232Z"
+              "WhenOpened": "2024-12-24T10:48:58.232Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "hv4dcolorcard.ts",
+              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4dcolorcard\\hv4dcolorcard.ts",
+              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\lib\\hv4dcolorcard\\hv4dcolorcard.ts",
+              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\lib\\hv4dcolorcard\\hv4dcolorcard.ts",
+              "RelativeToolTip": "projects\\hv4dwww\\src\\lib\\hv4dcolorcard\\hv4dcolorcard.ts",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-29T23:30:05.521Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ihv4dwebelement.ts",
               "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\interface\\ihv4dwebelement.ts",
               "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\interface\\ihv4dwebelement.ts",
               "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\interface\\ihv4dwebelement.ts",
               "RelativeToolTip": "projects\\hv4dwww\\src\\interface\\ihv4dwebelement.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-24T10:45:37.052Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "hv4dgridview.ts",
-              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.ts",
-              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.ts",
-              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.ts",
-              "RelativeToolTip": "projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.ts",
-              "ViewState": "AgIAABcDAAAAAAAAAAAuwBkDAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-28T13:39:17.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "hv4dgridview.html",
-              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html",
-              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html",
-              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html",
-              "RelativeToolTip": "projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-27T03:21:04.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "hv4dbanner.ts",
-              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.ts",
-              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.ts",
-              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.ts",
-              "RelativeToolTip": "projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.ts",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAwFsAAAB3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-23T19:17:19.072Z",
+              "WhenOpened": "2024-12-24T10:45:37.052Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "hv4dgridview.ts",
+              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.ts",
+              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.ts",
+              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.ts",
+              "RelativeToolTip": "projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.ts",
+              "ViewState": "AgIAAH4BAAAAAAAAAAAuwJQBAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-28T13:39:17.33Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "hv4dgridview.html",
+              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html",
+              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html",
+              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html",
+              "RelativeToolTip": "projects\\hv4dwww\\src\\widget\\hv4dgridview\\hv4dgridview.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-27T03:21:04.606Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "hv4dbanner.ts",
+              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.ts",
+              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.ts",
+              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.ts",
+              "RelativeToolTip": "projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.ts",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAcwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-23T19:17:19.072Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "hv4dbanner.html",
               "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.html",
               "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.html",
               "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.html",
               "RelativeToolTip": "projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-24T17:19:06.148Z"
+              "WhenOpened": "2024-12-24T17:19:06.148Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "hv4dbanner.css",
+              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.css",
+              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.css",
+              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.css",
+              "RelativeToolTip": "projects\\hv4dwww\\src\\widget\\hv4dbanner\\hv4dbanner.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-29T14:53:18.582Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "hv4dborder.ts",
+              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.ts",
+              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.ts",
+              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.ts",
+              "RelativeToolTip": "projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-29T21:17:09.099Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "hv4dborder.html",
+              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.html",
+              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.html",
+              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.html",
+              "RelativeToolTip": "projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-29T21:17:25.501Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "hv4dborder.css",
+              "DocumentMoniker": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.css",
+              "RelativeDocumentMoniker": "projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.css",
+              "ToolTip": "C:\\Users\\Developer\\Source\\hv4dwww\\projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.css",
+              "RelativeToolTip": "projects\\hv4dwww\\src\\widget\\hv4dborder\\hv4dborder.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-29T21:17:17.591Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             }
           ]
         }

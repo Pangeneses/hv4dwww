@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { hv4drwdu } from '../lib/hv4drwdu/hv4drwdu';
+import { hv4dpixels } from '../lib/hv4dpixels/hv4dpixels';
 import { hv4dpanel } from '../lib/hv4dpanel/hv4dpanel';
 export interface ihv4dwebelement {
 

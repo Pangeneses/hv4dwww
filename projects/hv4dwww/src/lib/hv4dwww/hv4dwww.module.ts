@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { hv4dhvid  } from '../../lib/hv4dhvid/hv4dhvid';
-import { hv4drwdu  } from '../../lib/hv4drwdu/hv4drwdu';
+import { hv4dpixels } from '../../lib/hv4dpixels/hv4dpixels';
+import { hv4dcolorcard } from '../hv4dcolorcard/hv4dcolorcard';
 import { hv4dpanel } from '../../lib/hv4dpanel/hv4dpanel';
 
 import { hv4danimico } from '../../widget/hv4danimico/hv4danimico';
 import { hv4dauto } from '../../widget/hv4dauto/hv4dauto';
 import { hv4dbanner } from '../../widget/hv4dbanner/hv4dbanner';
 import { hv4dbar } from '../../widget/hv4dbar/hv4dbar';
+import { hv4dborder } from '../../widget/hv4dborder/hv4dborder';
 import { hv4dbutton } from '../../widget/hv4dbutton/hv4dbutton';
 import { hv4dcalendar } from '../../widget/hv4dcalendar/hv4dcalendar';
 import { hv4dcheckbox } from '../../widget/hv4dcheckbox/hv4dcheckbox';
@@ -60,12 +62,14 @@ import { hv4dwebview } from '../../widget/hv4dwebview/hv4dwebview';
 @NgModule({
   declarations: [
     hv4dhvid, 
-    hv4drwdu, 
+    hv4dpixels,
+    hv4dcolorcard,
     hv4dpanel,
     hv4danimico,
     hv4dauto,
     hv4dbanner,
     hv4dbar,
+    hv4dborder,
     hv4dbutton,
     hv4dcalendar,
     hv4dcheckbox,
@@ -123,12 +127,14 @@ import { hv4dwebview } from '../../widget/hv4dwebview/hv4dwebview';
   ],
   exports: [
     hv4dhvid, 
-    hv4drwdu, 
+    hv4dpixels,
+    hv4dcolorcard,
     hv4dpanel,
     hv4danimico,
     hv4dauto,
     hv4dbanner,
     hv4dbar,
+    hv4dborder,
     hv4dbutton,
     hv4dcalendar,
     hv4dcheckbox,

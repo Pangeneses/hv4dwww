@@ -1,4 +1,4 @@
-import { hv4drwdu } from '../../lib/hv4drwdu/hv4drwdu'
+import { hv4dpixels } from '../hv4dpixels/hv4dpixels'
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,15 +9,15 @@ import { Component } from '@angular/core';
 })
 export class hv4dpanel {
 
-  private PanelUCoordx = new hv4drwdu;
-  private PanelUCoordy = new hv4drwdu;
-  private PanelVCoordx = new hv4drwdu;
-  private PanelVCoordy = new hv4drwdu;
+  private PanelUCoordx = new hv4dpixels;
+  private PanelUCoordy = new hv4dpixels;
+  private PanelVCoordx = new hv4dpixels;
+  private PanelVCoordy = new hv4dpixels;
 
-  UCoordx(): hv4drwdu { return this.PanelUCoordx; }
-  UCoordy(): hv4drwdu { return this.PanelUCoordy; }
-  VCoordx(): hv4drwdu { return this.PanelVCoordx; }
-  VCoordy(): hv4drwdu { return this.PanelVCoordy; }
+  UCoordx(): hv4dpixels { return this.PanelUCoordx; }
+  UCoordy(): hv4dpixels { return this.PanelUCoordy; }
+  VCoordx(): hv4dpixels { return this.PanelVCoordx; }
+  VCoordy(): hv4dpixels { return this.PanelVCoordy; }
 
   constructor() {
     this.PanelUCoordx.FromString("0px");
@@ -34,7 +34,7 @@ export class hv4dpanel {
 
     if (typeof ucoordx !== 'undefined') {
 
-      this.PanelUCoordx = new hv4drwdu();
+      this.PanelUCoordx = new hv4dpixels();
 
       try {
         this.PanelUCoordx.FromString(ucoordx);
@@ -59,7 +59,7 @@ export class hv4dpanel {
 
     if (typeof ucoordy !== 'undefined') {
 
-      this.PanelUCoordy = new hv4drwdu();
+      this.PanelUCoordy = new hv4dpixels();
 
       try {
         this.PanelUCoordy.FromString(ucoordy);
@@ -84,7 +84,7 @@ export class hv4dpanel {
 
     if (typeof vcoordx !== 'undefined') {
 
-      this.PanelVCoordx = new hv4drwdu();
+      this.PanelVCoordx = new hv4dpixels();
 
       try {
         this.PanelVCoordx.FromString(vcoordx);
@@ -109,7 +109,7 @@ export class hv4dpanel {
 
     if (typeof vcoordy !== 'undefined') {
 
-      this.PanelVCoordy = new hv4drwdu();
+      this.PanelVCoordy = new hv4dpixels();
 
       try {
         this.PanelVCoordy.FromString(vcoordy);
