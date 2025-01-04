@@ -15,7 +15,7 @@ export class hv4dbanner implements ihv4dwebelement, OnInit {
   @Input('GridRow') GridRow?: string;
   @Input('GridColumnSpan') GridColumnSpan?: string;
   @Input('GridRowSpan') GridRowSpan?: string;
-  @Input() URL!: string;
+  @Input('URL') URL!: string;
 
   public Position = 'absolute';
 

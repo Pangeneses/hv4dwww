@@ -545,11 +545,26 @@ export class hv4dgridview implements ihv4dwebelement, OnInit, AfterContentInit {
         }
       }
 
-      if (test.Units().match("auto")) numauto += 1;
+      if (test.Units().match("auto")) {
 
-      else if (test.Units().match("px")) nonautowidth += test.Value();
+        numauto += 1;
 
-      else console.log("GridView: AutoDefineColumns: loop");
+      }
+      else if (test.Units().match("px")) {
+
+        nonautowidth += test.Value();
+
+      }
+      else if (test.Units().match("*")) {
+
+        numauto += test.Value();
+
+      }
+      else {
+
+        console.log("GridView: AutoDefineColumns: loop");
+
+      }
     }
 
     try {
@@ -584,7 +599,16 @@ export class hv4dgridview implements ihv4dwebelement, OnInit, AfterContentInit {
         }
       }
 
-      if (test.Units().match("auto")) this.ColDefinitions.Columns[index].Width = autocellsz.toString() + "px";
+      if (test.Units().match("auto")) {
+
+        this.ColDefinitions.Columns[index].Width = autocellsz.toString() + "px";
+
+      }
+      else if (test.Units().match("*")) {
+
+        this.RowDefinitions.Rows[index].Height = (autocellsz * test.Value()).toString() + "px";
+
+      }
 
       test.FromString(this.ColDefinitions.Columns[index].Width);
 
@@ -636,11 +660,26 @@ export class hv4dgridview implements ihv4dwebelement, OnInit, AfterContentInit {
         }
       }
 
-      if (test.Units().match("auto")) numauto += 1;
+      if (test.Units().match("auto")) {
 
-      else if (test.Units().match("px")) nonautoheight += test.Value();
+        numauto += 1;
 
-      else console.log("GridView: AutoDefineRows: loop");
+      }
+      else if (test.Units().match("px")) {
+
+        nonautoheight += test.Value();
+
+      }
+      else if (test.Units().match("*")) {
+
+        numauto += test.Value();
+
+      }
+      else {
+
+        console.log("GridView: AutoDefineRows: loop");
+
+      }
     }
 
     try {
@@ -675,7 +714,16 @@ export class hv4dgridview implements ihv4dwebelement, OnInit, AfterContentInit {
         }
       }
 
-      if (test.Units().match("auto")) this.RowDefinitions.Rows[index].Height = autocellsz.toString() + "px";
+      if (test.Units().match("auto")) {
+
+        this.RowDefinitions.Rows[index].Height = autocellsz.toString() + "px";
+
+      }
+      else if (test.Units().match("*")) {
+
+        this.RowDefinitions.Rows[index].Height = (autocellsz * test.Value()).toString() + "px";
+
+      }
 
       test.FromString(this.RowDefinitions.Rows[index].Height);
 

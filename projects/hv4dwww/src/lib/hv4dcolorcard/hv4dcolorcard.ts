@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'hv4dcolorcard',
@@ -6,13 +6,27 @@ import { Component } from '@angular/core';
   styles: '',
   standalone: false
 })
-export class hv4dcolorcard {
+export class hv4dcolorcard implements OnInit {
+
+  @Input('Color') Color?: string;
 
   id: string = "";
   hex: string = "";
   dec: string = "";
   alpha: string = "";
+
   constructor() { this.PixelColorsInit(); }
+
+  ngOnInit() {
+
+    if (typeof this.Color !== 'undefined') {
+
+      if (this.ColorCard(this.Color) == -1) {
+
+        this.NewCard(this.Color);
+      }
+    }
+  }
 
   public NewCard(idIn: string = "", hexIn: string = "", decIn: string = ""): void {
 
@@ -34,6 +48,18 @@ export class hv4dcolorcard {
     }
 
     if (hexIn !== "") {
+
+      let index = this.ColorCard(hexIn);
+
+      if (index !== -1) {
+
+        this.id = hv4dcolorcard.PixelColors[index].id;
+        this.hex = hv4dcolorcard.PixelColors[index].hex;
+        this.dec = hv4dcolorcard.PixelColors[index].dec;
+        this.alpha = hv4dcolorcard.PixelColors[index].alpha;
+
+        return;
+      }
 
       if (!this.isAlphaNumeric(hexIn.substring(1, hexIn.length - 1))) throw new SyntaxError("hv4dcolor FromString: isMalformed.");
 
@@ -75,6 +101,18 @@ export class hv4dcolorcard {
     }
 
     if (decIn !== "") {
+
+      let index = this.ColorCard(hexIn);
+
+      if (index !== -1) {
+
+        this.id = hv4dcolorcard.PixelColors[index].id;
+        this.hex = hv4dcolorcard.PixelColors[index].hex;
+        this.dec = hv4dcolorcard.PixelColors[index].dec;
+        this.alpha = hv4dcolorcard.PixelColors[index].alpha;
+
+        return; 
+      }
 
       this.hex = "#";
 
@@ -146,15 +184,6 @@ export class hv4dcolorcard {
 
     if (input == "") return -1;
 
-    if (input.length == 9) {
-
-      this.alpha = input.substring(8, 2);
-
-      if (!this.isAlphaNumeric(this.alpha)) throw new SyntaxError("hv4dcolorcard ColorCard: isMalformed.")
-
-      input = input.substring(0, 7);
-    }
-
     if (input.at(0) == "(") {
 
       for (let i: number = 0; i < hv4dcolorcard.PixelColors.length; i++) {
@@ -168,6 +197,13 @@ export class hv4dcolorcard {
     }
 
     if (input.at(0) == "#") {
+
+      if (input.length == 9) {
+
+        input = input.substring(0, 7);
+      }
+
+      if (!this.isAlphaNumeric(input.substring(1, input.length - 1))) throw new SyntaxError("hv4dcolorcard ColorCard: isMalformed.")
 
       for (let i: number = 0; i < hv4dcolorcard.PixelColors.length; i++) {
 
@@ -186,18 +222,35 @@ export class hv4dcolorcard {
         if (hv4dcolorcard.PixelColors[i].id.match(input)) return i;
 
       }
-
     }
 
     return -1;
   }
 
-  toRGBA(): string {
-    return this.dec.substring(0, this.dec.length - 1) + "," + parseInt(this.alpha.substring(1, 2), 16)?.valueOf().toString() + ")";
+  toDecimal(): string {
+
+    if (this.alpha !== "") {
+
+      return this.dec.substring(0, this.dec.length - 1) + "," + parseInt(this.alpha.substring(1, 2), 16)?.valueOf().toString() + ")";
+    }
+    else {
+
+      return this.dec;
+    }
+
   }
 
   toHexA(): string {
-    return this.hex + this.alpha.substring(1, 2);
+
+    if (this.alpha !== "") {
+
+      return this.hex + this.alpha.substring(1, 2);
+    }
+    else {
+
+      return this.hex;
+    }
+
   }
 
   public static PixelColors: hv4dcolorcard[] = [];

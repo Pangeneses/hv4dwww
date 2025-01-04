@@ -5,12 +5,12 @@
     "\\projects\\hv4dwww",
     "\\projects\\hv4dwww\\src",
     "\\projects\\hv4dwww\\src\\lib",
-    "\\projects\\hv4dwww\\src\\lib\\hv4dcolorcard",
-    "\\projects\\hv4dwww\\src\\lib\\hv4dpixels",
+    "\\projects\\hv4dwww\\src\\lib\\hv4dgradstop",
+    "\\projects\\hv4dwww\\src\\lib\\hv4dlineargrad",
     "\\projects\\hv4dwww\\src\\widget",
     "\\projects\\hv4dwww\\src\\widget\\hv4dbanner",
     "\\projects\\hv4dwww\\src\\widget\\hv4dborder"
   ],
-  "SelectedNode": "\\projects\\hv4dwww\\src\\public-api.ts",
+  "SelectedNode": "\\tsconfig.json",
   "PreviewInSolutionExplorer": false
 }
